@@ -181,6 +181,10 @@ PRODUCT_PACKAGE_OVERLAYS += \
 # Art
 include vendor/blackiron/config/art.mk
 
+# Themes
+PRODUCT_PACKAGES += \
+    AndroidBlackThemeOverlay \
+
 # Versioning
 include vendor/blackiron/config/version.mk
 
