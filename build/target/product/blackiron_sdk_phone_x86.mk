@@ -1,5 +1,5 @@
-# Copyright (C) 2018-2020 The LineageOS Project
-# Copyright (C) 2021 DerpFest
+# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 BlackIron
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,8 +13,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/derp/build/target/product/derp_generic_car_target.mk
+$(call inherit-product, build/target/product/sdk_phone_x86.mk)
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/sdk_x86_64.mk)
+include vendor/blackiron/build/target/product/blackiron_generic_target.mk
 
-PRODUCT_NAME := derp_sdk_car_x86_64
+# Enable mainline checking
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
+
+# Overrides
+PRODUCT_NAME := blackiron_sdk_phone_x86
+PRODUCT_MODEL := LineageOS Android SDK built for x86

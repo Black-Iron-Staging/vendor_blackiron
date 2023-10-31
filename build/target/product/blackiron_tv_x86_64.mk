@@ -1,5 +1,5 @@
 # Copyright (C) 2018-2020 The LineageOS Project
-# Copyright (C) 2021 DerpFest
+# Copyright (C) 2021 BlackIron
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,13 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/google/atv/products/aosp_tv_arm.mk)
+$(call inherit-product, device/google/atv/products/aosp_tv_x86_64.mk)
 
-include vendor/derp/build/target/product/derp_generic_tv_target.mk
+include vendor/blackiron/build/target/product/blackiron_generic_tv_target.mk
 
-TARGET_NO_KERNEL_OVERRIDE := true
-TARGET_USES_64_BIT_BINDER := true
-
-PRODUCT_NAME := derp_tv_arm
+PRODUCT_NAME := blackiron_tv_x86_64
 
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS :=
