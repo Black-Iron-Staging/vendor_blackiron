@@ -21,7 +21,6 @@ endif
 
 # Themes
 PRODUCT_PACKAGES += \
-    BlackTheme \
     BlackironThemesStub \
     BlackironWalls \
     ThemePicker
