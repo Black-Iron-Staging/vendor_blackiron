@@ -196,6 +196,12 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/blackiron/overlay/common \
     vendor/blackiron/overlay/no-rro
 
+PRODUCT_PACKAGES += \
+    CertifiedPropsOverlay
+
+PRODUCT_COPY_FILES += \
+    vendor/blackiron/config/config-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/overlay/config/config.xml
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
 # Art
