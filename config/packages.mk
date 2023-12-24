@@ -10,7 +10,6 @@ PRODUCT_PACKAGES += \
     Ripple \
     TouchGestures \
     Updater \
-    OmniJaws \
     WarpShare
 
 # Whether the compiled build to be shipped with Aperture CAM
