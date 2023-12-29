@@ -191,3 +191,6 @@ include vendor/blackiron/config/version.mk
 # GApps
 WITH_GMS := true
 $(call inherit-product, vendor/gms/products/gms.mk)
+
+# Pixel Framework
+$(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
