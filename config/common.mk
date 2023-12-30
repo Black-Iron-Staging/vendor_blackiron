@@ -160,8 +160,8 @@ PRODUCT_PACKAGES += \
 
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    Settings \
-    SystemUI \
+    SettingsGoogle \
+    SystemUIGoogle \
     BlackironLauncher
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
