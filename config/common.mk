@@ -204,5 +204,3 @@ PRODUCT_PACKAGES += \
 # Versioning
 include vendor/blackiron/config/version.mk
 
-# Pixel Framework
-$(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
