@@ -174,11 +174,11 @@ PRODUCT_PACKAGES += \
     libtextclassifier_actions_suggestions_universal_model \
     libtextclassifier_lang_id_model
 
-# SystemUI
+# Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
+    NexusLauncherRelease \
     SettingsGoogle \
-    SystemUIGoogle \
-    BlackironLauncher
+    SystemUIGoogle
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
@@ -203,10 +203,6 @@ PRODUCT_PACKAGES += \
 
 # Versioning
 include vendor/blackiron/config/version.mk
-
-# GApps
-WITH_GMS := true
-$(call inherit-product, vendor/gms/products/gms.mk)
 
 # Pixel Framework
 $(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
