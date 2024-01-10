@@ -33,6 +33,10 @@ PRODUCT_SYSTEM_PROPERTIES += ro.adb.secure=1
 PRODUCT_SYSTEM_PROPERTIES += persist.sys.strictmode.disable=true
 endif
 
+
+# Bootanimation
+$(call inherit-product, vendor/blackiron/config/bootanimation.mk)
+
 # Backup Tool
 ifneq ($(TARGET_EXCLUDE_BACKUPTOOL),true)
 PRODUCT_COPY_FILES += \
