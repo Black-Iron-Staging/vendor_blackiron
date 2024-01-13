@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 #
-# Copyright (C) 2013-15 The CyanogenMod Project
-#           (C) 2017    The LineageOS Project
-#           (C) 2021    BlackIron
+# Copyright (C) 2013-2015 The CyanogenMod Project
+#           (C) 2017-2024 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,8 +20,6 @@
 # Run repopick.py -h for a description of this utility.
 #
 
-from __future__ import print_function
-
 import sys
 import json
 import os
@@ -36,7 +33,6 @@ from xml.etree import ElementTree
 try:
     import requests
 except ImportError:
-    import urllib.error
     import urllib.request
 
 
@@ -441,7 +437,7 @@ if __name__ == '__main__':
 
         # Print out some useful info
         if not args.quiet:
-            print(u'--> Subject:       "{0}"'.format(item['subject']))
+            print('--> Subject:       "{0}"'.format(item['subject']))
             print('--> Project path:  {0}'.format(project_path))
             print('--> Change number: {0} (Patch Set {1})'.format(item['id'], item['patchset']))
 
