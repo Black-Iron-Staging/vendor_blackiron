@@ -287,4 +287,7 @@
         <item>org.lineageos.jelly</item>
         <item>org.lineageos.recorder</item>
     </string-array>
+
+    <!-- Maximum velocity to initiate a fling, as measured in dips per second. -->
+    <dimen name="config_viewMaxFlingVelocity">12000dp</dimen>
 </resources>
