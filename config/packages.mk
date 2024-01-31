@@ -3,6 +3,7 @@ PRODUCT_PACKAGES += \
     BlackironSetupWizard \
     Prospect \
     GameSpace \
+    Glimpse \
     NetworkStackOverlay \
     Panic \
     RepainterServicePriv \
